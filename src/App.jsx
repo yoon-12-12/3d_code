@@ -34,7 +34,7 @@ function App() {
 
   const handleAnalyze = async () => {
     try {
-      const response = await axios.post('https://3d-code.onrender.com/analyze', { 
+      const response = await axios.post('http://127.0.0.1:8000/analyze', { 
         blocks: blocks.map(b => ({ id: b.id, code: b.code })) 
       });
       
